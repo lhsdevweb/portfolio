@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black; color: white;}
+
+header h1 {text-align: center; font-weight: lighter; font-size: 1.4em; margin: 40px;}
+header p {font-size: large; width: 600px; margin: auto; text-align: justify; padding-bottom: 20px;}
+#p2 {width: 90vw; text-align: center;}
+
+a {color: yellow; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+main > div {display: flex; margin: 20px 0;}
+main div div {display: block;}
+.site_imagem, .site_descrição {width: 60%;} 
+
+img {max-width: 80%; margin-left: 80px; border: white solid 1px;}
+h2 {font-weight: normal; margin-top: 40px; font-size: 1em;}
+h3 {margin-bottom: 10px;}
+
+#voltar {margin: 40px 0 0 0;}
+#voltar a {margin: auto;}
+/* #voltar {text-align: center;} não funciona */
+
+@media (max-width: 900px) {
+    .site_descrição {margin-left: 10px;}
+}
+@media (max-width: 800px) {
+    header p {font-size: 1em; width: 500px;}
+    .site_descrição {font-size: .8em; margin-left: 20px;}
+}
+@media (max-width: 700px) {
+    header p {width: 400px;}
+    main > div {display: block; width: 100%;}
+    .site_imagem {width: 100%; text-align: center;} 
+    .site_descrição {margin: 0 0 40px 65px;}
+    h2 {margin-top: 10px;}
+    img {margin-left: 0px;}
+    #voltar {text-align: center;}
+    /* #voltar a {margin: auto;} não funciona */
+}
+@media (max-width: 600px) {
+    header h1 {font-size: 1em;}
+    header p {font-size: .8em; width: 300px;}
+    .site_descrição {width: 80%;}
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+* {margin: 0; padding: 0; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+header {background-color: black;}
+header img, aside img {width: 100vw;}
+#capa2 {display: none;}
+h1, h2 {display: none;}
+
+#info {background-color: black; color: white; padding: 40px 150px; line-height: 2em;}
+#info p {text-align: justify;}
+ul {margin-left: 40px;}
+
+.portfolio {display: flex; max-width: 800px; margin: auto; padding: 30px 0 80px 0;}
+.sites-1, .sites-2 {flex: 1 1 200px; margin: 20px; text-align: center;}
+.sites-1 img {max-width: 100%;} .sites-2 img {max-width: 100%; height: 85%;}
+h3 {margin-bottom: 10px;} .espaço {width: 50px;}
+
+.redesocial {display: flex; background-color: beige;}
+.redesocial div {flex: 1 1 600px; margin: 10px; text-align: center;}
+img {max-width: 100%;} 
+
+.telamenor {display: none;}
+/*
+flex-wrap: wrap;
+@media (max-width: 1250px) {
+    .portfolio {background-color: aqua;}
+}
+*/
+@media (max-width: 950px) {
+    #info {padding: 40px 100px;}
+    .espaço {width: 20px;}
+}
+@media (max-width: 800px) {
+    .portfolio h3 {font-size: 1em;}
+    .espaço {width: 0;}
+}
+@media (max-width: 650px) {
+    .portfolio h3 {font-size: .8em;}
+    .redesocial h3 {font-size: 1em;}
+}
+@media (max-width: 600px) {
+    #info {padding: 40px 50px; font-size: .8em;}
+    .telamaior {display: none;}
+    .telamenor {display: block; text-align: center;}
+}
+
+@media (max-width: 500px) {
+    #capa1 {display: none;}
+    #capa2 {display: block;}
+    .portfolio {display: block;}    
+    .redesocial {display: block; padding-top: 20px;}    
+    .redesocial div {margin-bottom: 20px;}   
+}

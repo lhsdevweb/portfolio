@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+footer {background-color: black; color: white; padding: 40px;}
+#rodape1, #rodape2 {line-height: 1.5em;}
+#rodape1 div {display: flex; justify-content: center;}
+#rodape2 {display: none;}
+
+@media (max-width: 650px) {
+    #rodape1 {display: none;}
+    #rodape2 {display: block; text-align: center;}
+}
+
+@media (max-width: 500px) {
+    footer {font-size: .8em;}
+}
