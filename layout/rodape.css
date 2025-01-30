@@ -5,7 +5,7 @@ footer {background-color: black; color: white; padding: 40px;}
 #rodape1 {text-align: center;}
 #rodape2 {display: none;}
 
-@media (max-width: 650px) {
+@media (max-width: 660px) {
     #rodape1 {display: none;}
     #rodape2 {display: block; text-align: center;}
 }
